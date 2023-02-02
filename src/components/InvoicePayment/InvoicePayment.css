@@ -1,0 +1,346 @@
+.invoice-payment-main {
+  background: #f3f3f3;
+  min-height: 100vh;
+  padding: 40px 0;
+}
+
+.invoice-payment-area {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.invoice-payment-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 0 17px;
+}
+
+.invoice-payment-top label {
+  font-weight: 700;
+  color: rgba(4, 4, 21, 0.8);
+  font-size: 20px;
+  text-transform: uppercase;
+}
+
+.invoice-payment {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 -40px 30px;
+  border-bottom: 3px solid #ffd89c;
+  padding: 0 40px 22px;
+}
+
+.invoice-payment p {
+  font-weight: 600;
+  color: #2f2929;
+  margin: 0;
+}
+
+.view-invoice-box {
+  border: 1px solid rgba(4, 4, 21, 0.12);
+  border-radius: 5px;
+}
+
+.view-invoice {
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px 10px;
+}
+
+.view-invoice-table {
+  overflow-x: auto;
+}
+
+.view-invoice-table > table {
+  margin: 0 0 30px;
+  border-radius: 5px;
+}
+
+.view-invoice-table table tr {
+  border-bottom: 1px solid rgba(4, 4, 21, 0.12);
+}
+
+.view-invoice-table table > thead th {
+  padding: 10px 10px;
+}
+
+.view-invoice-table table > tbody td {
+  padding: 10px 10px;
+}
+
+.invoice-description {
+  background: #f7f7f8;
+  border-radius: 4px;
+  padding: 10px 16px;
+  margin: 0 0 10px;
+  overflow-y: auto;
+  height: 50px;
+}
+
+.invoice-description-area {
+  padding: 0 10px 12px;
+}
+
+.invoice-description h5 {
+  font-size: 12px;
+  color: rgba(4, 4, 21, 0.5);
+  margin: 0 0 8px;
+}
+
+.invoice-description p {
+  margin: 0;
+  font-weight: 500;
+  font-size: 13px;
+  color: #040415;
+}
+
+.payment-method-area {
+  margin: 25px 0 20px;
+}
+
+.payment-method-area h4 {
+  font-weight: 500;
+  font-size: 15px;
+  color: rgba(4, 4, 21, 0.6);
+  margin: 10px 0 15px;
+}
+.card-holder-name {
+  margin-top: 10px !important;
+}
+.card-holder-name input {
+  color: black !important;
+}
+.payments {
+  display: flex;
+  gap: 20px;
+}
+
+.card-form-area {
+  max-width: 453px;
+}
+
+.card-field {
+  display: flex;
+  flex-direction: column;
+  margin: 0 0 12px;
+}
+
+.card-field label {
+  font-weight: 500;
+  font-size: 16px;
+  color: #040415;
+  margin: 0 0 8px;
+}
+
+.card-field input {
+  border: 1px solid rgba(4, 4, 21, 0.12);
+  padding: 12px 16px;
+  font-size: 15px;
+  font-weight: 500;
+  color: rgba(4, 4, 21, 0.5);
+  border-radius: 5px;
+}
+
+.card-pay-button-area {
+  text-align: center;
+  margin: 30px 0 15px;
+}
+
+.card-pay-button {
+  max-width: 398px;
+  cursor: pointer;
+  border-radius: 26px;
+  border: none;
+  font-weight: 600;
+  font-size: 18px;
+  padding: 12px 36px;
+  color: rgba(4, 4, 21, 0.7);
+  background: #ffd89c;
+  transition: 0.5s;
+}
+
+.card-pay-button:hover {
+  background: #fe9900;
+}
+
+.view-invoice-click-area {
+  height: 33px;
+  margin: auto 0;
+  padding: 0px;
+}
+
+.view-invoice-table {
+  overflow: hidden;
+  animation-name: openTable;
+  animation-duration: 0.4s;
+}
+
+.close-invoice-table {
+  border: 1px solid rgba(4, 4, 21, 0.12);
+  border-radius: 5px;
+  animation-name: closeTable;
+  animation-duration: 0.4s;
+}
+
+.close-invoice-icon {
+  transform: rotate(0deg);
+}
+
+.open-invoice-icon {
+  transform: rotate(180deg);
+}
+
+@keyframes openFees {
+  from {
+    height: 0px;
+    opacity: 0;
+  }
+  to {
+    height: 123.4px;
+    opacity: 1;
+  }
+}
+@keyframes openTable {
+  from {
+    height: 0px;
+  }
+  to {
+    height: 315px;
+  }
+}
+
+@keyframes closeTable {
+  from {
+    height: 315px;
+  }
+  to {
+    height: 45px;
+  }
+}
+
+.swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  right: 0px !important;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+  width: 20px !important;
+}
+
+.swiper-button-next:after,
+.swiper-button-prev:after {
+  font-size: 18px !important;
+}
+.shimmer {
+  border-radius: 5px;
+}
+.all-paycard {
+  display: flex;
+  justify-content: space-between;
+}
+.payment-method-title-shimmer {
+  margin: 10px 0;
+}
+.cvv-date {
+  display: flex;
+  justify-content: space-between;
+}
+
+.paying-fee-area {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin: 0px 0 20px;
+}
+
+.paying-fee-area h4 {
+  font-weight: 600;
+  font-size: 18px;
+  color: rgba(4, 4, 21, 0.8);
+  margin: 0;
+}
+
+.paying-fee-area button {
+  background: none;
+  border: 1px solid rgba(4, 4, 21, 0.15);
+  border-radius: 4px;
+  color: rgba(4, 4, 21, 0.8);
+  font-size: 18px;
+}
+
+.paying-fee-area button {
+  cursor: pointer;
+  background: none;
+  border: 1px solid rgba(4, 4, 21, 0.15);
+  border-radius: 4px;
+  color: rgba(4, 4, 21, 0.8);
+  font-weight: 500;
+  font-size: 18px;
+  padding: 8px 18px;
+  margin-left: 15px;
+  transition: 0.3s;
+}
+
+.paying-fee-area button:hover {
+  background: #ffd89c;
+}
+
+.paying-fee-area .btn-active {
+  background: #ffd89c;
+}
+
+.paying-fee-table {
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  animation-name: openFees;
+  animation-duration: 0.4s;
+  margin: 0 0 15px;
+}
+
+.paying-fee-table table td {
+  font-size: 18px;
+  padding: 8px 18px;
+}
+
+.invoice-payment-left h3 {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(4, 4, 21, 0.6);
+  margin: 0 0 5px;
+}
+
+.invoice-payment-left h2 {
+  font-weight: 600;
+  font-size: 24px;
+  color: rgba(4, 4, 21, 0.8);
+}
+
+.invoice-payment-right {
+  text-align: right;
+}
+
+.invoice-payment-right h5 {
+  margin: 0 0 6px;
+  font-weight: 500;
+  color: rgba(4, 4, 21, 0.6);
+  font-size: 16px;
+}
+
+.invoice-payment-right h2 {
+  margin: 0 0 15px;
+  font-weight: 700;
+  font-size: 30px;
+}
+
+.invoice-payment-right p {
+  background: #ffd89c;
+  border-radius: 6px;
+  padding: 10px 15px;
+}

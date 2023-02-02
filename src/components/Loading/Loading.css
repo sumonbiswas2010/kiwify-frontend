@@ -1,0 +1,78 @@
+.total {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: 100%;
+  background-color: rgba(245, 245, 245, 0.5);
+  z-index: 1000;
+}
+.only-logo-div {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  z-index: 99;
+}
+.only-logo-div div {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(#fdeed9db, #fff6e9);
+  border-radius: 50%;
+  rotate: 0deg;
+  animation: colorChange 1.1s linear infinite;
+}
+.only-logo-img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 99;
+  width: 148px;
+  border-radius: 50%;
+}
+
+.ellipse {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 150px;
+  height: 150px;
+  z-index: 99;
+}
+.ellipse img {
+  width: 100%;
+  animation: load8 1.1s infinite linear;
+}
+.loader--hide {
+  opacity: 0;
+}
+/* .loader img {
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  transform: rotate(360deg);
+  rotate: 0deg;
+  animation: load8 1.1s infinite linear;
+} */
+@keyframes load8 {
+  0% {
+    /* transform: translate(-50%, -50%); */
+    rotate: 0deg;
+  }
+  100% {
+    /* transform: translate(-50%, -50%); */
+    rotate: 360deg;
+  }
+}
+@keyframes colorChange {
+  0% {
+    rotate: 0deg;
+  }
+  100% {
+    rotate: 360deg;
+  }
+}

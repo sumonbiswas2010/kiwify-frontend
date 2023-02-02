@@ -1,0 +1,31 @@
+.ayment-success-main {
+  background: #f3f3f3;
+  min-height: 100vh;
+  padding: 80px 0 0;
+}
+
+.ayment-success-area {
+  max-width: 620px;
+  margin: 0 auto;
+  padding: 24px 40px;
+  background: #ffffff;
+  border-radius: 7px;
+}
+
+.payment-success {
+  text-align: center;
+}
+
+.payment-success h3 {
+  font-weight: 700;
+  font-size: 32px;
+  color: rgba(4, 4, 21, 0.8);
+  margin: 28px 0 20px;
+}
+
+.payment-success p {
+  font-weight: 500;
+  font-size: 20px;
+  color: rgba(4, 4, 21, 0.6);
+  margin: 0;
+}
