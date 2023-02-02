@@ -8,7 +8,6 @@ import './Home.css';
 import Nav from './Nav';
 const Home = () => {
     const [courses, setCourses] = useState();
-    const [coursesJSX, setCoursesJSX] = useState();
     const [displayData, setDisplayData] = useState();
 
     const [open, setOpen] = useState(false);
@@ -20,14 +19,11 @@ const Home = () => {
     useEffect(() => {
         getCourses();
     }, []);
-    console.log(courses);
 
     useEffect(() => {
         if (!courses) return;
         setDisplayData({ ...courses[0]?.courses[0], class_title: courses[0]?.title });
     }, [courses]);
-
-    console.log(displayData);
 
     return (
         <div className="home-div">
@@ -60,7 +56,6 @@ const Home = () => {
                 <div className="classes-top">
                     <p>Classes</p> <p>X</p>
                 </div>
-                {coursesJSX}
                 {courses?.map((d) => (
                     <>
                         <div onClick={() => setOpen(!open)} className="slider-top">
